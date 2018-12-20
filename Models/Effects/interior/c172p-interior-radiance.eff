@@ -7,12 +7,26 @@
         <texture n="4">
             <type>cubemap</type>
             <images>
-                <positive-x>Aircraft/c172p/Models/Effects/interior/white.png</positive-x>
+                <!--positive-x>Aircraft/c172p/Models/Effects/interior/white.png</positive-x>
                 <negative-x>Aircraft/c172p/Models/Effects/interior/white.png</negative-x>
                 <positive-y>Aircraft/c172p/Models/Effects/interior/white.png</positive-y>
                 <negative-y>Aircraft/c172p/Models/Effects/interior/white.png</negative-y>
                 <positive-z>Aircraft/c172p/Models/Effects/interior/white.png</positive-z>
-                <negative-z>Aircraft/c172p/Models/Effects/interior/white.png</negative-z>
+                <negative-z>Aircraft/c172p/Models/Effects/interior/white.png</negative-z-->
+
+                <!--positive-x>Aircraft/c172p/Models/Effects/interior/shadow-sudo_px.png</positive-x>
+                <negative-x>Aircraft/c172p/Models/Effects/interior/shadow-sudo_nx.png</negative-x>
+                <positive-y>Aircraft/c172p/Models/Effects/interior/shadow-sudo_py.png</positive-y>
+                <negative-y>Aircraft/c172p/Models/Effects/interior/shadow-sudo_ny.png</negative-y>
+                <positive-z>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</positive-z>
+                <negative-z>Aircraft/c172p/Models/Effects/interior/shadow-sudo_nz.png</negative-z-->
+
+                <positive-x>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</positive-x>
+                <negative-x>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</negative-x>
+                <positive-y>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</positive-y>
+                <negative-y>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</negative-y>
+                <positive-z>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</positive-z>
+                <negative-z>Aircraft/c172p/Models/Effects/interior/shadow-sudo_pz.png</negative-z>
             </images>
         </texture>
         <light-filter-one type="vec3d">0.5 0.5 0.5</light-filter-one>
