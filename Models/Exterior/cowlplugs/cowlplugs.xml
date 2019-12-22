@@ -6,8 +6,7 @@
     <texture-path>../../../Models</texture-path>
 
     <effect>
-        <inherits-from>Effects/exterior/dirt-fuselage</inherits-from>
-
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/dirt-fuselage</inherits-from>
         <object-name>PropellerCowlPlugs</object-name>
     </effect>
 
