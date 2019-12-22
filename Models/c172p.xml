@@ -153,6 +153,16 @@
         </offsets>
      </model>
 
+    <animation>
+        <type>noshadow</type>
+        <object-name>nav-light-left</object-name>
+        <object-name>nav-light-right</object-name>
+        <object-name>nav-light-tail</object-name>
+        <object-name>strobe-light-right</object-name>
+        <object-name>strobe-light-left</object-name>
+        <object-name>BeaconOffX</object-name>
+    </animation>
+
     <!-- non-Canvas remote Garmin 196 GPS (FGDATA) -->
     <!-- TODO Remove this old version, unhide and implement the Canvas version below -->
     <model>
