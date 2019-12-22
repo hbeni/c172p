@@ -571,13 +571,13 @@
     <!-- exterior effects -->
     <!-- Normal shader effect. Separate effects required for each normal map and dirt texture -->
     <effect>
-        <inherits-from>Effects/exterior/dirt-leading-edge</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/dirt-leading-edge</inherits-from>
         <object-name>wing_leading_edge_left</object-name>
         <object-name>wing_leading_edge_right</object-name>
         <object-name>wing_leading_edge_center</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/exterior/dirt-wing</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/dirt-wing</inherits-from>
         <object-name>flaps</object-name>
         <object-name>leftaileron</object-name>
         <object-name>rightaileron</object-name>
@@ -588,7 +588,7 @@
         <object-name>courtesyoff</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/exterior/dirt-fuselage</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/dirt-fuselage</inherits-from>
         <object-name>NoseWheelStrut</object-name>
         <object-name>LeftWheelStrut</object-name>
         <object-name>RightWheelStrut</object-name>
@@ -647,7 +647,7 @@
     </effect>
 
     <effect>
-        <inherits-from>Effects/exterior/bumpspec</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/bumpspec</inherits-from>
         <object-name>oilcompartment</object-name>
         <object-name>OilCap</object-name>
         <object-name>wing_0</object-name>
@@ -663,7 +663,7 @@
     </effect>
 
     <effect>
-        <inherits-from>Effects/exterior/dirt-tail</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/dirt-tail</inherits-from>
         <object-name>elevatorleft</object-name>
         <object-name>elevatorright</object-name>
         <object-name>elevatortrim</object-name>
@@ -683,7 +683,7 @@
     </effect>
 
     <effect>
-        <inherits-from>Effects/exterior/exterior-glass-reflection</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/exterior/exterior-glass-reflection</inherits-from>
         <object-name>glas</object-name>
         <object-name>leftwindow</object-name>
         <object-name>rightwindow</object-name>
@@ -905,41 +905,40 @@
         <object-name>doorintstrapright</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/interior/c172p-interior</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior</inherits-from>
         <object-name>wing_1C</object-name>
         <object-name>SeatMounts.0</object-name>
         <object-name>SeatMounts.1</object-name>
         <object-name>SeatMounts.2</object-name>
-
     </effect>
 
     <effect>
-        <inherits-from>Effects/interior/interior-glass-reflection-panel-front</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/interior-glass-reflection-panel-front</inherits-from>
         <object-name>glass_panel</object-name>
     </effect>
 
     <effect>
-        <inherits-from>Effects/interior/c172p-interior-glass-reflection-front</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior-glass-reflection-front</inherits-from>
         <object-name>glas_interior</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/interior/c172p-interior-glass-front-sides</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior-glass-front-sides</inherits-from>
         <object-name>glas_front_interior_sides</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/interior/c172p-interior-glass-window-left</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior-glass-window-left</inherits-from>
         <object-name>leftwindow_interior</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/interior/c172p-interior-glass-window-right</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior-glass-window-right</inherits-from>
         <object-name>rightwindow_interior</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/interior/c172p-interior-glass-back-sides</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior-glass-back-sides</inherits-from>
         <object-name>glas_interior_sides</object-name>
     </effect>
     <effect>
-        <inherits-from>Effects/interior/c172p-interior-glass-back</inherits-from>
+        <inherits-from>Aircraft/c172p/Models/Effects/interior/c172p-interior-glass-back</inherits-from>
         <object-name>glas_interior_back</object-name>
     </effect>
 
