@@ -1020,6 +1020,7 @@
         <object-name>LowVoltageLed</object-name>
         <object-name>LowVoltageLedBase</object-name>
         <object-name>panel_1_gauges</object-name>
+        <object-name>panel_1_glass</object-name>
         <object-name>Pedestal</object-name>
         <object-name>InstrumentCover</object-name>
         <object-name>panel_1_1.inf</object-name>
@@ -1308,6 +1309,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1329,6 +1333,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1350,6 +1357,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1371,6 +1381,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1392,6 +1405,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1413,6 +1429,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1434,6 +1453,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1455,6 +1477,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1476,6 +1501,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1497,6 +1525,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1518,6 +1549,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1539,6 +1573,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1560,6 +1597,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1581,6 +1621,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1602,6 +1645,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1623,6 +1669,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/sim/model/material/instruments/factor</property>
                     <value>0</value>
@@ -1668,6 +1717,9 @@
         </offsets>
         <condition>
             <and>
+				        <not>
+					        <property>controls/panel/glass</property>
+				        </not>
                 <greater-than>
                     <property>/instrumentation/low-voltage-led</property>
                     <value>0</value>
@@ -1791,10 +1843,81 @@
     <!-- Instrumentation -->
 
     <model>
-        <name>Gear</name>
-        <path>Interior/Panel/Instruments/gear/gear-ctl.xml</path>
+        <name>fg1000</name>
+        <path>Interior/Panel/Instruments/fg1000/fg1000.xml</path>
+        <condition>
+            <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>asi-fg1000</name>
+        <path>Interior/Panel/Instruments/asi/asi-fg1000.xml</path>
+        <condition>
+			      <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>AI-fg1000</name>
+        <path>Interior/Panel/Instruments/AI/AI-fg1000.xml</path>
+        <condition>
+			      <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>Altimeter-fg1000</name>
+        <path>Interior/Panel/Instruments/alt/alt-fg1000.xml</path>
+        <condition>
+			      <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>Kap140-fg1000</name>
+        <path>Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt-fg1000.xml</path>
+        <condition>
+            <and>
+                <property>controls/panel/glass</property>
+                <property>controls/panel/kap140</property>
+            </and>
+        </condition>
+    </model>
+    <model>
+        <name>kr87-fg1000</name>
+        <path>Interior/Panel/Instruments/kr87-adf/kr87-fg1000.xml</path>
+        <condition>
+            <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>mag_sw-fg1000</name>
+        <path>Interior/Panel/Instruments/magneto-switch/magneto-switch-fg1000.xml</path>
+        <condition>
+            <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>hobbs-fg1000</name>
+        <path>Interior/Panel/Instruments/hobbs/hobbs-fg1000.xml</path>
+        <condition>
+            <property>controls/panel/glass</property>
+        </condition>
+    </model>
+    <model>
+        <name>Gear-fg1000</name>
+        <path>Interior/Panel/Instruments/gear/gear-ctl-fg1000.xml</path>
+        <condition>
+            <property>controls/panel/glass</property>
+        </condition>
     </model>
 
+    <model>
+        <name>Gear</name>
+        <path>Interior/Panel/Instruments/gear/gear-ctl.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
+    </model>
     <model>
         <name>MagCompass</name>
         <path>Interior/Panel/Instruments/mag-compass/mag-compass.xml</path>
@@ -1829,65 +1952,140 @@
             </or>
         </condition>
     </model>
+	  <model>
+        <name>asi</name>
+        <path>Interior/Panel/Instruments/asi/asi.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
+    </model>
     <model>
         <name>AI</name>
         <path>Interior/Panel/Instruments/AI/AI.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>Altimeter</name>
         <path>Interior/Panel/Instruments/alt/alt.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>BatteryGauge</name>
         <path>Interior/Panel/Instruments/BatteryGauge/BatteryGauge.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>Kap140</name>
         <path>Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>dme</name>
         <path>Interior/Panel/Instruments/dme/ki266.xml</path>
-    </model>
-    <model>
-        <name>asi</name>
-        <path>Interior/Panel/Instruments/asi/asi.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>Turn</name>
         <path>Interior/Panel/Instruments/tc/tc.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>VSI</name>
         <path>Interior/Panel/Instruments/VSI/VSI.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>RPM</name>
         <path>Interior/Panel/Instruments/RPM/RPM.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>EGT</name>
         <path>Interior/Panel/Instruments/EGT/EGT.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>hi</name>
         <path>Interior/Panel/Instruments/hi/hi.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>avor</name>
         <path>Interior/Panel/Instruments/vor/vor.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>vor2</name>
         <path>Interior/Panel/Instruments/vor/vor2.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>adf</name>
         <path>Interior/Panel/Instruments/kr87-adf/ki227_228.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>kx165-1</name>
         <path>Interior/Panel/Instruments/kx165/kx165-1.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
         <overlay>
             <params>
                 <dimming>sim/model/material/instruments/factor</dimming>
@@ -1900,6 +2098,11 @@
     <model>
         <name>kx165-2</name>
         <path>Interior/Panel/Instruments/kx165/kx165-2.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
         <overlay>
             <params>
                 <dimming>sim/model/material/instruments/factor</dimming>
@@ -1912,15 +2115,29 @@
     <model>
         <name>kma20</name>
         <path>Interior/Panel/Instruments/kma20/kma20.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>kr87</name>
         <path>Interior/Panel/Instruments/kr87-adf/kr87.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
-
     <model>
         <name>transponder</name>
         <path>Interior/Panel/Instruments/kt76a/kt76a.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
         <!--overlay>
             <params>
                 <dimming>sim/model/material/instruments/factor</dimming>
@@ -1934,27 +2151,57 @@
     <model>
         <name>clock</name>
         <path>Interior/Panel/Instruments/clock/clock.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>digital-clock</name>
         <path>Interior/Panel/Instruments/digital-clock/digital-clock.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
 
     <model>
         <name>vac</name>
         <path>Interior/Panel/Instruments/vac/vac.xml</path>
+		<condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>fuel</name>
         <path>Interior/Panel/Instruments/FuelOilAmps/c172fuel.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>oil</name>
         <path>Interior/Panel/Instruments/FuelOilAmps/c172oil.xml</path>
+		<condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>mag_sw</name>
         <path>Interior/Panel/Instruments/magneto-switch/magneto-switch.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <model>
         <name>Yokes</name>
@@ -1970,12 +2217,22 @@
     </model>
     <model>
         <path>Interior/Panel/Instruments/hobbs/hobbs.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
 
     <!-- MOD: OAT -->
     <model>
         <name>OAT-object</name>
         <path>Interior/Panel/Instruments/oat/oat.xml</path>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
+        </condition>
     </model>
     <!-- MODEND -->
 
@@ -3187,6 +3444,71 @@
         <object-name>LabelWhiteFloodSlider</object-name>
         <condition>
             <property>sim/panel-hotspots</property>
+        </condition>
+    </animation>
+
+
+    <animation>
+        <type>select</type>
+        <object-name>MasterSwitch</object-name>
+        <object-name>GenSwitch</object-name>
+        <object-name>AvionicsSwitch</object-name>
+        <object-name>AvionicsSwitchBase</object-name>
+        <object-name>PrimerLever</object-name>
+        <object-name>PrimerLeverMount</object-name>
+        <object-name>accport</object-name>
+        <object-name>CabinAirMounts</object-name>
+        <object-name>CabinAir</object-name>
+        <object-name>CabinHeat</object-name>
+        <object-name>MixtureMount</object-name>
+        <object-name>ThrottleMount</object-name>
+        <object-name>Mixture</object-name>
+        <object-name>Throttle</object-name>
+        <object-name>CarbHeat</object-name>
+        <object-name>CarbHeatBack</object-name>
+        <object-name>CarbHeatRod</object-name>
+        <object-name>CarbHeatMount</object-name>
+        <object-name>AltStaticAir</object-name>
+        <object-name>radio-light-knob</object-name>
+        <object-name>panel-light-knob</object-name>
+        <object-name>light-knob-base</object-name>
+        <object-name>panel_1_gauges</object-name>
+        <object-name>bolts</object-name>
+        <object-name>panel_1_1.inf</object-name>
+        <object-name>panel_1_1_right</object-name>
+        <object-name>InstrumentCover</object-name>
+        <object-name>glass_panel</object-name>
+        <object-name>LowVoltageLed</object-name>
+        <object-name>LowVoltageLedBase</object-name>
+        <object-name>BeaconSwitch</object-name>
+        <object-name>LandingLightSwitch</object-name>
+        <object-name>NavLightSwitch</object-name>
+        <object-name>PitotHeatSwitch</object-name>
+        <object-name>StrobeSwitch</object-name>
+        <object-name>TaxiLightSwitch</object-name>
+        <object-name>ParkingBrake</object-name>
+
+        <object-name>autopilot_breaker</object-name>
+        <object-name>radio5_breaker</object-name>
+        <object-name>radio4_breaker</object-name>
+        <object-name>radio3_breaker</object-name>
+        <object-name>radio2_breaker</object-name>
+        <object-name>radio1_breaker</object-name>
+        <object-name>turn-coordinator_breaker</object-name>
+        <object-name>strobe_breaker</object-name>
+        <object-name>bcnlt_breaker</object-name>
+        <object-name>landing_breaker</object-name>
+        <object-name>navlt_breaker</object-name>
+        <object-name>intlt_breaker</object-name>
+        <object-name>instr_breaker</object-name>
+        <object-name>pitot-heat_breaker</object-name>
+        <object-name>master_breaker</object-name>
+        <object-name>flaps_breaker</object-name>
+        <object-name>BreakersBase</object-name>
+        <condition>
+            <not>
+                <property>controls/panel/glass</property>
+            </not>
         </condition>
     </animation>
 
@@ -4872,7 +5194,6 @@
     </animation>
 
     <!-- MOD: MASTER/GEN Switches included 2/3 -->
-
     <!-- MasterSwitch -->
     <animation>
         <type>pick</type>
@@ -5132,7 +5453,7 @@
             <binding>
                 <command>property-adjust</command>
                 <property>/controls/engines/current-engine/throttle</property>
-                <factor>0.05</factor>
+                <factor>0.02</factor>
                 <min>0</min>
                 <max>1</max>
                 <wrap>0</wrap>
@@ -5209,7 +5530,7 @@
             <binding>
                 <command>property-adjust</command>
                 <property>controls/engines/current-engine/mixture</property>
-                <factor>0.05</factor>
+                <factor>0.02</factor>
                 <min>0</min>
                 <max>1</max>
                 <wrap>0</wrap>
@@ -5248,7 +5569,7 @@
             <binding>
                 <command>property-adjust</command>
                 <property>controls/flight/elevator-trim</property>
-                <factor>0.01</factor>
+                <factor>0.001</factor>
                 <min>-1</min>
                 <max>1</max>
                 <wrap>0</wrap>
@@ -5257,7 +5578,7 @@
         <hovered>
             <binding>
                 <command>set-tooltip</command>
-                <label>Elevator trim: %3.2f</label>
+                <label>Elevator trim: %3.3f</label>
                 <tooltip-id>pitch-trim</tooltip-id>
                 <property>controls/flight/elevator-trim</property>
             </binding>
@@ -5283,7 +5604,7 @@
     <animation>
         <type>knob</type>
         <object-name>RudderTrimKnob</object-name>
-        <property>controls/flight/rudder-trim-knob</property>
+        <property>controls/flight/rudder-trim</property>
         <factor>40</factor>
         <drag-direction>horizontal</drag-direction>
         <offset-deg>0</offset-deg>
@@ -5300,8 +5621,8 @@
         <action>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/flight/rudder-trim-knob</property>
-                <factor>0.01</factor>
+                <property>controls/flight/rudder-trim</property>
+                <factor>0.002</factor>
                 <min>-.18</min>
                 <max>.18</max>
                 <wrap>false</wrap>
@@ -5310,9 +5631,9 @@
         <hovered>
             <binding>
                 <command>set-tooltip</command>
-                <label>Rudder trim: %3.2f</label>
+                <label>Rudder trim: %3.3f</label>
                 <tooltip-id>rudder-trim</tooltip-id>
-                <property>controls/flight/rudder-trim-knob</property>
+                <property>controls/flight/rudder-trim</property>
             </binding>
         </hovered>
     </animation>
@@ -6079,6 +6400,20 @@
         </condition>
     </animation>
 
+    <!-- Fuel selector face 43/68-->
+    <animation>
+        <type>textranslate</type>
+        <object-name>FuelSelectorFace</object-name>
+        <property>/fdm/jsbsim/fuel/tank</property>
+        <bias>0.00</bias>
+        <factor>.5</factor>
+        <step>1</step>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+        </axis>
+    </animation>
+
     <!-- Fuel Selector -->
     <animation>
         <type>select</type>
@@ -6091,6 +6426,12 @@
                 <not>
                     <property>consumables/fuel/tank[1]/selected</property>
                 </not>
+                <not>
+                    <property>consumables/fuel/tank[2]/selected</property>
+                </not>
+                <not>
+                    <property>consumables/fuel/tank[3]/selected</property>
+                </not>
             </and>
         </condition>
     </animation>
@@ -6098,34 +6439,56 @@
         <type>select</type>
         <object-name>FuelSelectorLeft</object-name>
         <condition>
-            <and>
-                <property>consumables/fuel/tank[0]/selected</property>
-                <not>
-                    <property>consumables/fuel/tank[1]/selected</property>
-                </not>
-            </and>
+            <or>
+                <and>
+                    <property>consumables/fuel/tank[0]/selected</property>
+                    <not>
+                        <property>consumables/fuel/tank[1]/selected</property>
+                    </not>
+                </and>
+                <and>
+                    <property>consumables/fuel/tank[2]/selected</property>
+                    <not>
+                        <property>consumables/fuel/tank[3]/selected</property>
+                    </not>
+                </and>
+            </or>
         </condition>
     </animation>
     <animation>
         <type>select</type>
         <object-name>FuelSelectorRight</object-name>
         <condition>
-            <and>
-                <not>
-                    <property>consumables/fuel/tank[0]/selected</property>
-                </not>
-                <property>consumables/fuel/tank[1]/selected</property>
-            </and>
+            <or>
+                <and>
+                    <not>
+                        <property>consumables/fuel/tank[0]/selected</property>
+                    </not>
+                    <property>consumables/fuel/tank[1]/selected</property>
+                </and>
+                <and>
+                    <not>
+                        <property>consumables/fuel/tank[2]/selected</property>
+                    </not>
+                    <property>consumables/fuel/tank[3]/selected</property>
+                </and>
+            </or>
         </condition>
     </animation>
     <animation>
         <type>select</type>
         <object-name>FuelSelectorBoth</object-name>
         <condition>
-            <and>
-                <property>consumables/fuel/tank[0]/selected</property>
-                <property>consumables/fuel/tank[1]/selected</property>
-            </and>
+            <or>
+                <and>
+                    <property>consumables/fuel/tank[0]/selected</property>
+                    <property>consumables/fuel/tank[1]/selected</property>
+                </and>
+                <and>
+                    <property>consumables/fuel/tank[2]/selected</property>
+                    <property>consumables/fuel/tank[3]/selected</property>
+                </and>
+            </or>
         </condition>
     </animation>
     <animation>
@@ -6145,6 +6508,16 @@
                 <property>consumables/fuel/tank[1]/selected</property>
                 <value>false</value>
             </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>consumables/fuel/tank[2]/selected</property>
+                <value>false</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>consumables/fuel/tank[3]/selected</property>
+                <value>false</value>
+            </binding>
         </action>
     </animation>
     <animation>
@@ -6155,14 +6528,21 @@
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
-                <command>property-assign</command>
-                <property>consumables/fuel/tank[0]/selected</property>
-                <value>true</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>consumables/fuel/tank[1]/selected</property>
-                <value>false</value>
+                <command>nasal</command>
+                <script>
+                    var integral_tanks = getprop("/fdm/jsbsim/fuel/tank");
+                    if (integral_tanks) {
+                        setprop("/consumables/fuel/tank[2]/selected", 1);
+                        setprop("/consumables/fuel/tank[3]/selected", 0);
+                        setprop("/consumables/fuel/tank[0]/selected", 0);
+                        setprop("/consumables/fuel/tank[1]/selected", 0);
+                    } else {
+                        setprop("/consumables/fuel/tank[0]/selected", 1);
+                        setprop("/consumables/fuel/tank[1]/selected", 0);
+                        setprop("/consumables/fuel/tank[2]/selected", 0);
+                        setprop("/consumables/fuel/tank[3]/selected", 0);
+                    }
+                </script>
             </binding>
         </action>
     </animation>
@@ -6174,14 +6554,21 @@
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
-                <command>property-assign</command>
-                <property>consumables/fuel/tank[0]/selected</property>
-                <value>false</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>consumables/fuel/tank[1]/selected</property>
-                <value>true</value>
+                <command>nasal</command>
+                <script>
+                    var integral_tanks = getprop("/fdm/jsbsim/fuel/tank");
+                    if (integral_tanks) {
+                        setprop("/consumables/fuel/tank[2]/selected", 0);
+                        setprop("/consumables/fuel/tank[3]/selected", 1);
+                        setprop("/consumables/fuel/tank[0]/selected", 0);
+                        setprop("/consumables/fuel/tank[1]/selected", 0);
+                    } else {
+                        setprop("/consumables/fuel/tank[0]/selected", 0);
+                        setprop("/consumables/fuel/tank[1]/selected", 1);
+                        setprop("/consumables/fuel/tank[2]/selected", 0);
+                        setprop("/consumables/fuel/tank[3]/selected", 0);
+                    }
+                </script>
             </binding>
         </action>
     </animation>
@@ -6193,14 +6580,21 @@
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
-                <command>property-assign</command>
-                <property>consumables/fuel/tank[0]/selected</property>
-                <value>true</value>
-            </binding>
-            <binding>
-                <command>property-assign</command>
-                <property>consumables/fuel/tank[1]/selected</property>
-                <value>true</value>
+                <command>nasal</command>
+                <script>
+                    var integral_tanks = getprop("/fdm/jsbsim/fuel/tank");
+                    if (integral_tanks) {
+                        setprop("/consumables/fuel/tank[2]/selected", 1);
+                        setprop("/consumables/fuel/tank[3]/selected", 1);
+                        setprop("/consumables/fuel/tank[0]/selected", 0);
+                        setprop("/consumables/fuel/tank[1]/selected", 0);
+                    } else {
+                        setprop("/consumables/fuel/tank[0]/selected", 1);
+                        setprop("/consumables/fuel/tank[1]/selected", 1);
+                        setprop("/consumables/fuel/tank[2]/selected", 0);
+                        setprop("/consumables/fuel/tank[3]/selected", 0);
+                    }
+                </script>
             </binding>
         </action>
     </animation>

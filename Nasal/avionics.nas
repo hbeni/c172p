@@ -134,6 +134,8 @@ aircraft.data.add(
     "/controls/anti-ice/pitot-heat",
     "/consumables/fuel/tank/selected",
     "/consumables/fuel/tank[1]/selected",
+    "/consumables/fuel/tank[2]/selected",
+    "/consumables/fuel/tank[3]/selected",
     "/sim/model/c172p/brake-parking",
     "/controls/flight/flaps",
     "/controls/flight/elevator-trim",
@@ -144,7 +146,7 @@ aircraft.data.add(
 
 # Circuit breakers
 aircraft.data.add(
-    "/controls/circuit-breakers/aircond",
+    #"/controls/circuit-breakers/aircond",
     "/controls/circuit-breakers/autopilot",
     "/controls/circuit-breakers/bcnlt",
     "/controls/circuit-breakers/flaps",

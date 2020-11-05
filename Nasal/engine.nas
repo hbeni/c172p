@@ -326,12 +326,18 @@ var coughing_timer = maketimer(1, engine_coughing);
 # ========== Main loop ======================
 
 var update = func {
-    var leftTankUsable  = getprop("/consumables/fuel/tank[0]/selected") and getprop("/consumables/fuel/tank[0]/level-gal_us") > 0;
-    var rightTankUsable = getprop("/consumables/fuel/tank[1]/selected") and getprop("/consumables/fuel/tank[1]/level-gal_us") > 0;
+    #this block should be moved out of nasal and into jsbsim or autopilot logic
+    var leftTankUsable  = 0;
+    var rightTankUsable = 0;
+    if (getprop("/consumables/fuel/tank[0]/selected") and getprop("/consumables/fuel/tank[0]/level-gal_us") > 0) leftTankUsable  = 1;
+    if (getprop("/consumables/fuel/tank[1]/selected") and getprop("/consumables/fuel/tank[1]/level-gal_us") > 0) rightTankUsable = 1;
+    if (getprop("/consumables/fuel/tank[2]/selected") and getprop("/consumables/fuel/tank[2]/level-gal_us") > 0) leftTankUsable  = 1;
+    if (getprop("/consumables/fuel/tank[3]/selected") and getprop("/consumables/fuel/tank[3]/level-gal_us") > 0) rightTankUsable = 1;
     var outOfFuel = !(leftTankUsable or rightTankUsable);
 
     # We use the mixture to control the engines, so set the mixture
     var usePrimer = getprop("/controls/engines/engine/use-primer") or 0;
+    if(getprop("/controls/panel/glass")) usePrimer = 0;
 
     var engine_running = getprop("/engines/active-engine/running");
 
@@ -380,7 +386,10 @@ setlistener("/controls/switches/starter", func {
     }
     else {
         print("Starter on");
-        setprop("/controls/engines/engine/use-primer", 1);
+        if(getprop("/controls/panel/glass"))
+            setprop("/controls/engines/engine/use-primer", 0); 
+        else
+            setprop("/controls/engines/engine/use-primer", 1);
         if (primerTimer.isRunning) {
             primerTimer.stop();
         }
