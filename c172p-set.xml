@@ -938,6 +938,9 @@ http://forum.flightgear.org/viewtopic.php?f=4&t=25157
         <updateloop>
             <file>Aircraft/Generic/updateloop.nas</file>
         </updateloop>
+        <autostart>
+            <file>Nasal/autostart.nas</file>
+        </autostart>
         <c172p>
             <file>Nasal/c172p.nas</file>
             <file>Nasal/liveries.nas</file>

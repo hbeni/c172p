@@ -91,6 +91,8 @@ For more information on taxiing, see Section 2-9 of the FAA Airplane Flying Hand
             <property>/controls/engines/current-engine/throttle</property>
             <value>0.2</value>
         </set>
+
+
         <set>
             <property>/controls/engines/engine/primer</property>
             <value>4</value>
@@ -127,12 +129,20 @@ For more information on taxiing, see Section 2-9 of the FAA Airplane Flying Hand
             <property>/sim/model/c172p/cockpit/control-lock-visible</property>
             <value>false</value>
         </set>
-        <nasal>
+        <set>
+            <property>/controls/engines/current-engine/mixture</property>
+            <value>1.0</value>
+        </set>
+        <set>
+            <property>/controls/switches/starter</property>
+            <value>1</value>
+        </set>
+        <!--nasal>
             <script>
                 setprop("/controls/engines/current-engine/mixture", 1.0);
                 setprop("/controls/switches/starter", 1);
             </script>
-        </nasal>
+        </nasal-->
         <message></message>
         <view>
             <heading-offset-deg>0.0</heading-offset-deg>
