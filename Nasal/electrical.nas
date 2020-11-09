@@ -275,8 +275,9 @@ var update_virtual_bus = func (dt) {
     load += avionics_bus_1();
 
     # swtich the master breaker off if load is out of limits
-    if ( load > 55 ) {
-      bus_volts = 0;
+    if ( load > 330 ) {
+      setprop("/controls/circuit-breakers/master", 0)
+      #bus_volts = 0;
     }
 
     # system loads and ammeter gauge
@@ -311,7 +312,6 @@ var update_virtual_bus = func (dt) {
 
     return load;
 }
-
 
 var electrical_bus_1 = func() {
     var bus_volts = 0.0;
@@ -400,7 +400,7 @@ var electrical_bus_1 = func() {
         setprop("/systems/electrical/outputs/instrument-lights", bus_volts);
         var radio_norm = getprop("/controls/lighting/radio-norm");
         if (radio_norm and radio_lighting_load) {
-            load += bus_volts / radio_lighting_load * radio_norm;
+            load += bus_volts / (radio_lighting_load * radio_norm);
         }
     } else {
         setprop("/systems/electrical/outputs/instrument-lights", 0.0);
@@ -517,6 +517,7 @@ var avionics_bus_1 = func() {
     # Audio Panel 1 Power
     if ( getprop("/controls/circuit-breakers/radio1") ) {
       setprop("/systems/electrical/outputs/audio-panel[0]", bus_volts);
+      radio_lighting_load = 2.0;
       load += bus_volts / 2.0;
     } else {
       setprop("/systems/electrical/outputs/audio-panel[0]", 0.0);
@@ -527,7 +528,7 @@ var avionics_bus_1 = func() {
       setprop("/systems/electrical/outputs/nav[0]", bus_volts);
       setprop("systems/electrical/outputs/comm[0]", bus_volts);
       load += bus_volts / 5.0;
-      radio_lighting_load = 5.0;
+      radio_lighting_load += 5.0;
     } else {
       setprop("/systems/electrical/outputs/nav[0]", 0.0);
       setprop("systems/electrical/outputs/comm[0]", 0.0);
