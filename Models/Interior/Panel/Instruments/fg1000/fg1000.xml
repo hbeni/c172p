@@ -109,6 +109,11 @@
         <object-name>warn_breaker-fg1000</object-name>
         <object-name>xpndr_breaker-fg1000</object-name>
         <object-name>BreakersBase-fg1000</object-name>
+        <object-name>bolts-fg1000</object-name>
+        <object-name>eltlamp</object-name>
+        <object-name>eltpanel</object-name>
+        <object-name>ELTSwitch</object-name>
+        <object-name>eltbolts</object-name>
     </effect>
 	  <effect>
         <inherits-from>Aircraft/c172p/Models/Effects/interior/lm-interior-panel-fg1000</inherits-from>
@@ -212,6 +217,11 @@
         <object-name>warn_breaker-fg1000</object-name>
         <object-name>xpndr_breaker-fg1000</object-name>
         <object-name>BreakersBase-fg1000</object-name>
+        <object-name>bolts-fg1000</object-name>
+        <object-name>eltlamp</object-name>
+        <object-name>eltpanel</object-name>
+        <object-name>ELTSwitch</object-name>
+        <object-name>eltbolts</object-name>
         <condition>
             <not>
                 <property>/sim/rendering/shaders/skydome</property>
