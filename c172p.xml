@@ -762,10 +762,17 @@
                 <output>/sim/model/c172p/cockpit/yoke-elevator</output>
             </kinematic>
 
+            <switch name="fcs/stick-force-per-g-qbarUW-psf">
+                <default value="0"/>
+                <test logic="OR" value="aero/qbarUW-psf">
+                   fcs/stick-force-per-g EQ 1
+                </test>
+            </switch>
+
             <scheduled_gain name="fcs/elevator-cmd-norm-gain">
                 <input>fcs/elevator-cmd-norm-filtered</input>
                 <table>
-                    <independentVar>aero/qbarUW-psf</independentVar>
+                    <independentVar>fcs/stick-force-per-g-qbarUW-psf</independentVar>
                     <tableData>
                         15    1.0000
                         16    0.9375
@@ -863,7 +870,7 @@
             <scheduled_gain name="fcs/aileron-cmd-norm-gain">
                 <input>fcs/aileron-cmd-norm-filtered</input>
                 <table>
-                    <independentVar>aero/qbarUW-psf</independentVar>
+                    <independentVar>fcs/stick-force-per-g-qbarUW-psf</independentVar>
                     <tableData>
                         30    1.0000
                         32    0.9375
@@ -976,7 +983,7 @@
             <scheduled_gain name="fcs/rudder-cmd-norm-gain">
                 <input>fcs/rudder-cmd-norm-filtered</input>
                 <table>
-                    <independentVar>aero/qbarUW-psf</independentVar>
+                    <independentVar>fcs/stick-force-per-g-qbarUW-psf</independentVar>
                     <tableData>
                         30    1.0000
                         32    0.9375
